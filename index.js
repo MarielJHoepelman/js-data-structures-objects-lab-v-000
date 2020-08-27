@@ -16,6 +16,6 @@ const driver = {};
     }
 
     function deleteFromDriverByKey(driver, key) {
-      updateDriverWithKeyAndValue
+      const copyOfDriver = driver
       delete copyOfDriver.key;
     }
