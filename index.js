@@ -7,7 +7,6 @@ const driver = {};
 
     function destructivelyUpdateDriverWithKeyAndValue(obj, key, value) {
       obj[key] = value;
-
       return obj;
     }
 
