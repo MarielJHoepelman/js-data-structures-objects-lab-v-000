@@ -9,8 +9,10 @@ const driver = {};
       return Object.assign({}, obj, { [key]: value });
     }
 
-    function destructivelyUpdateDriverWithKeyAndValue (obj, key, value) {
+    function destructivelyUpdateDriverWithKeyAndValue(obj, key, value) {
       obj[key] = value;
 
       return obj;
     }
+
+    function deleteFromDriverByKey
