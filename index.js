@@ -12,5 +12,5 @@ const driver = {};
     }
 
     function deleteFromDriverByKey(driver, key) {
-
+      let Object.assign({}, driver, { [key]: value });
     }
