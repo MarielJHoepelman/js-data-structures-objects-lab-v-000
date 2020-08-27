@@ -5,9 +5,6 @@ const driver = {};
     // 1) returns a driver with the original key value pairs and the new key value pair
     // 2) it does not modify the original driver, but rather returns a clone with the new data
 
-    function updateDriverWithKeyAndValue(driver, key, value) {
-      const addDriver = { ...obj };
-      addDriver[key] = value;
-
-      return newObj;
+    function nondestructivelyUpdateObject(obj, key, value) {
+      return Object.assign({}, obj, { [key]: value });
     }
