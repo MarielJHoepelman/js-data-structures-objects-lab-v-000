@@ -16,6 +16,6 @@ const driver = {};
     }
 
     function deleteFromDriverByKey(driver, key) {
-      let newDriver = driver
       delete newDriver.key;
+      return driver
     }
